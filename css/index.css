@@ -1,0 +1,116 @@
+/*Styling The Calculator*****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --text: #404040;
+    --bg: #dddddd;
+}
+html {
+    font-size: 62%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0074c7;
+    background: #ebf9ff;
+    width: 100vw;
+    height: 100vh;
+}
+.container {
+    width: 335px;
+    height: 420px;
+    background: #fff;
+    border: 0.1px solid #d4d4d4;
+    border-radius: 8px;
+    justify-content: center;
+    box-shadow:
+        2px 5px 10px #e2e2e2,
+        2px 5px 10px #e2e2e2,
+        2px 3px 5px #e2e2e2;
+}
+.container #name {
+    color: #676767;
+    text-align: center;
+    font-size: 22px;
+    font-family: Sans-Serif;
+    padding: 0.5rem;
+    border-bottom: 0.1px solid #d4d4d4;
+}
+.container #results {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    box-shadow:
+        2px 5px 10px #e2e2e2,
+        2px 6px 10px #e2e2e2 inset;
+    border-radius: 5px;
+    margin: 0.8rem 1rem;
+    padding: 1.5rem 1.7rem;
+    font-size: 19px;
+    font-weight: 800;
+    font-family: Monospace;
+    text-align: center;
+}
+.container .btn-group {
+    margin: 1.9rem 1.2rem;
+    display: grid;
+    text-align: center;
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr 1.3fr;
+    grid-template-areas: "button button button button";
+    grid-gap: 1.7rem;
+    align-items: center;
+}
+.btn-group button {
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 17px;
+    box-shadow:
+        2px 5px 10px #e2e2e2,
+        2px 6px 10px #e2e2e2 inset;
+    
+}
+.btn-group #on {
+    background: #009b22;
+    color: #fff;
+    font-family: Monospace;
+    box-shadow: none;
+}
+.btn-group #clear {
+    background: #c90b0b;
+    color: #fff;
+    font-family: Monospace;
+    box-shadow: none;
+}
+.btn-group #parsent {
+    background: #ffd500;
+    color: #fff;
+    font-family: Monospace;
+    box-shadow: none;
+}
+.btn-group #operator {
+    background: #1e69d7;
+    color: #fff;
+    font-family: Monospace;
+    box-shadow: none;
+    font-size: 20px;
+}
+.btn-group #equal {
+    background: #000;
+    color: #fff;
+    font-family: Monospace;
+    box-shadow: none;
+}
+.btn-group button:hover {
+    transform: scale(1.2);
+    background: #cfcfcf;
+    font-size: 17.5px;
+}
